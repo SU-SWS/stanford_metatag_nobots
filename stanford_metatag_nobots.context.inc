@@ -36,7 +36,7 @@ function stanford_metatag_nobots_context_default_contexts() {
   // Included for use with string extractors like potx.
   t('Development');
   t('Blocks search engine robots from crawling your site. DISABLE ON PRODUCTION WEBSITES.');
-  $export['user_agent_bans'] = $context;
+  $export['block_robots'] = $context;
 
   return $export;
 }
