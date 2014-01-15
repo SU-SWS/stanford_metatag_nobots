@@ -1,0 +1,7 @@
+Stanford MetaTag NoBots x.x-x.x xxxx-xx-xx
+------------------------------------------
+
+Stanford MetaTag NoBots 7.x-2.0-alpha2 2014-01-15
+-------------------------------------------------
+Initial release on 2.x branch. Re-architected to use Context to set the
+  X-Robots-Tag HTTP header when it detects the User Agent is a bot.
