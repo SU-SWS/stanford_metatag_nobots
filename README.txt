@@ -1,14 +1,6 @@
 Stanford MetaTag NoBots
 =======================
 
-Simple Drupal Features module blocking search engine robots from indexing a site via the Meta Tag module.
-
-To use: enable the Feature. This will add the following tag to the <head> section of every public page of your website:
-
-<meta name="robots" content="noarchive, nofollow, noindex" />
-
-This will block robots from crawling your website.
-
-You probably will want to disable this module before launching a site.
-
-Note: If you "revert" the global MetaTags settings at admin/config/search/metatags, that will override this Feature.
+Stanford MetaTag NoBots has been re-architected in the 7.x-2.x-dev branch. Users
+are encouraged not to use the 1.x branch, as it has some issues with persisting the
+state of "noindex,nofollow,noarchive" robots meta tags in undesirable ways.
