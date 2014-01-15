@@ -1,6 +1,8 @@
 Stanford MetaTag NoBots
 =======================
 
+Authors: John Bickar, Shea McKinney.
+
 Simple Drupal Features module blocking search engine robots from indexing a site
 via the X-Robots-Tag HTTP header.
 
