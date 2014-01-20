@@ -10,4 +10,4 @@ dependencies[] = context_useragent
 dependencies[] = features
 features[context][] = block_robots
 features[ctools][] = context:context:3
-features[features_api][] = api:1
+features[features_api][] = api:2
