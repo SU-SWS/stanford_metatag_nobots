@@ -18,3 +18,15 @@ X-Robots-Tag:noindex,nofollow,noarchive
 This will block robots from crawling your website.
 
 You probably will want to disable this module before launching a site.
+
+To test if it's working, you can use curl to specify the user agent string:
+
+curl -A Googlebot -D /tmp/headers.txt https://foo.stanford.edu/
+
+The HTTP headers will be written to a file at /tmp/headers.txt.
+
+Or, if you want to be more fancy:
+
+curl -sS 1>/dev/null -A Googlebot -D /tmp/headers.txt https://foo.stanford.edu/ && grep 'X-Robots' /tmp/headers.txt
+
+That should output "X-Robots-Tag: noindex,nofollow,noarchive" if the headers are being sent correctly.
