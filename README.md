@@ -1,5 +1,5 @@
 #[Stanford Metatag Nobots](https://github.com/SU-SWS/stanford_metatag_nobots)
-##### Version: 7.x-3.0-alpha1
+##### Version: 7.x-3.0-alpha2
 
 Maintainers: [jbickar](https://github.com/jbickar), [sherakama](https://github.com/sherakama)   
 [Changelog.txt](CHANGELOG.txt)
