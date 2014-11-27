@@ -1,7 +1,7 @@
 #[Stanford Metatag Nobots](https://github.com/SU-SWS/stanford_metatag_nobots)
-##### Version: 7.x-3.0-alpha2
+##### Version: 7.x-3.0
 
-Maintainers: [jbickar](https://github.com/jbickar), [sherakama](https://github.com/sherakama)   
+Maintainers: [jbickar](https://github.com/jbickar), [sherakama](https://github.com/sherakama)
 [Changelog.txt](CHANGELOG.txt)
 
 This module prevents search engine robots from crawling and indexing a website while it is still in development. This module should only be enabled if you do not want your website to indexed. Please disable this module when a site is ‘live’.
@@ -13,7 +13,7 @@ See https://developers.google.com/webmasters/control-crawl-index/docs/robots_met
 for more information on that HTTP header.
 
 To use: enable the Feature. This will check the User Agent string of the client
-that is accessing your website. If the User Agent is one of the common search engine 
+that is accessing your website. If the User Agent is one of the common search engine
 bots (Google, Yahoo!, Bing, Baidu), it will return the following header:
 
 X-Robots-Tag:noindex,nofollow,noarchive

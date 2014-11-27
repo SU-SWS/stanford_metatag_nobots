@@ -1,6 +1,13 @@
 Stanford MetaTag NoBots x.x-x.x xxxx-xx-xx
 ------------------------------------------
 
+Stanford MetaTag NoBots 7.x-3.0 2014-11-27
+-------------------------------------------------
+- Rename README.txt to README.md
+- Update stanford_metatag_nobots.info to add project status url
+- Updating version number in .info file
+- Adding instructions to check if it's working the README
+
 Stanford MetaTag NoBots 7.x-3.0-alpha2 2014-03-31
 -------------------------------------------------
 Initial release on 3.x branch. Rebuilt to use Features 2.x
