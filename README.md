@@ -24,13 +24,13 @@ You probably will want to disable this module before launching a site.
 
 To test if it's working, you can use curl to specify the user agent string:
 
-    curl -A Googlebot -D /tmp/headers.txt https://foo.stanford.edu/
+    curl -A Googlebot -I https://foo.stanford.edu/
 
-The HTTP headers will be written to a file at /tmp/headers.txt.
+The HTTP headers will be written to stdout
 
 Or, if you want to be more fancy:
 
-    curl -sS 1>/dev/null -A Googlebot -D /tmp/headers.txt https://foo.stanford.edu/ && grep 'X-Robots' /tmp/headers.txt
+    curl -sS -A Googlebot -I https://foo.stanford.edu/ | grep 'X-Robots'
 
 That should output "X-Robots-Tag: noindex,nofollow,noarchive" if the headers are being sent correctly.
 
