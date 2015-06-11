@@ -17,9 +17,9 @@ function stanford_metatag_nobots_context_default_contexts() {
   $context->description = 'Blocks search engine robots from crawling your site. DISABLE ON PRODUCTION WEBSITES.';
   $context->tag = 'Development';
   $context->conditions = array(
-    'useragent' => array(
+    'sitewide' => array(
       'values' => array(
-        0 => 'Googlebot|Slurp|bingbot|Baiduspider|msnbot',
+        1 => 1,
       ),
     ),
   );
@@ -30,7 +30,7 @@ function stanford_metatag_nobots_context_default_contexts() {
       ),
     ),
   );
-  $context->condition_mode = 0;
+  $context->condition_mode = 1;
 
   // Translatables
   // Included for use with string extractors like potx.
