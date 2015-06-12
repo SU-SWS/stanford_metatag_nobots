@@ -7,7 +7,6 @@ project = stanford_metatag_nobots
 project status url = https://github.com/SU-SWS/stanford_metatag_nobots
 dependencies[] = context
 dependencies[] = context_http_header
-dependencies[] = context_useragent
 dependencies[] = features
 features[context][] = block_robots
 features[ctools][] = context:context:3
