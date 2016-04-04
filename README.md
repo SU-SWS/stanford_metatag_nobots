@@ -4,15 +4,15 @@
 Maintainers: [jbickar](https://github.com/jbickar), [sherakama](https://github.com/sherakama)
 [Changelog.txt](CHANGELOG.txt)
 
-This module prevents search engine robots from crawling and indexing a website while it is still in development. This module should only be enabled if you do not want your website to indexed. Please disable this module when a site is ‘live’.
+This module prevents search engine robots from crawling and indexing a website while it is still in development. This module should only be enabled if you do not want your website to be indexed. Please disable this module when a site is ‘live’.
 
-Simple Drupal Features module blocking search engine robots from indexing a site
-via the X-Robots-Tag HTTP header.
+This is a simple Drupal Features module blocking search engine robots from indexing a site via the X-Robots-Tag HTTP header.
 
-See https://developers.google.com/webmasters/control-crawl-index/docs/robots_meta_tag
-for more information on that HTTP header.
+See https://developers.google.com/webmasters/control-crawl-index/docs/robots_meta_tag for more information on that HTTP header.
 
-To use: enable the Feature. 
+To use: enable the Feature. This will cause all requests to your site to return the following HTTP header:
+
+    X-Robots-Tag:noindex,nofollow,noarchive
 
 You probably will want to disable this module before launching a site.
 
@@ -26,8 +26,9 @@ Or, if you want to be more fancy:
 
     curl -sS -I https://foo.stanford.edu/ | grep 'X-Robots'
 
-That should output "X-Robots-Tag: noindex,nofollow,noarchive". 
-This will block robots from crawling your website.
+That should output "X-Robots-Tag: noindex,nofollow,noarchive" if the headers are being sent correctly.
+
+This will block (well-behaved) search engine robots from crawling your website.
 
 
 Installation
