@@ -10,5 +10,5 @@
   "suggest": {
         "drupal/nobots": "metatag_nobots is deprecated in favor of just nobots"
     },
-  "abandoned": true
+  "abandoned": "drupal/nobots"
 }
