@@ -8,7 +8,7 @@
   "minimum-stability": "dev",
   "require": {},
   "suggest": {
-        "drupal/nobots": "metatag_nobots is deprecated in favor of just nobots",
+        "drupal/nobots": "metatag_nobots is deprecated in favor of just nobots"
     },
   "abandoned": true
 }
